@@ -1,0 +1,84 @@
+<!--BOILER PLATE CODE TO SET UP MY WEBPAGE--------------------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Web Analysis Dashboard</title>
+
+ <!--LINKS TO STYLESHEETS--------------->   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<!--CREATE A NAVIGATION BAR WITH DROPDOWN FEATURE AND MOBILE FLEXIBILITY----------------->
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <!--BRAND ------>
+        <a class="navbar-brand" href="HTML_COPY.html"> City Latitude Analysis </a>
+      
+        <!-- LINKS ---------- -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="Comparisons.html">Comparison</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Data.html">Data</a>
+          </li>
+      
+          <!-- DROPDOWN MENU ------->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              Plots
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="Web Visualizations/Visualizations/maxtemp.html">Max Temperature</a></li>
+              <li><a class="dropdown-item" href="Web Visualizations/Visualizations/humidity.html">Humidity</a></li>
+              <li><a class="dropdown-item" href="Web Visualizations/Visualizations/cloudiness.html">Cloudiness</a></li>
+              <li><a class="dropdown-item" href="Web Visualizations/Visualizations/wind.html">Wind Speed</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+<header class="header">
+      <h1>Comparison Analysis</h1>
+    </header>
+    
+      <section class="visual-custom">
+        <div class="row row-cols-1 row-cols-md-2 g-4"> 
+          <div class="col">
+            <div class="card center" style="width:600px">
+            <a target="_blank" href="Web Visualizations/Visualizations/maxtemp.html">  
+              <img src="Resources/assets/images/Fig1.png" class="card-img-top" alt="Temperature-Image">
+            </a>  
+            </div>
+          </div>
+          <div class="col">
+            <div class="card center" style="width:600px">
+            <a target="_blank" href="Web Visualizations/Visualizations/humidity.html">
+              <img src="Resources/assets/images/Fig2.png" class="card-img-top" alt="Humidity-Image">
+            </a>  
+            </div>
+          </div>
+          <div class="col">
+            <div class="card center" style="width:600px">
+            <a target="_blank" href="Web Visualizations/Visualizations/cloudiness.html"> 
+              <img src="Resources/assets/images/Fig3.png" class="card-img-top" alt="Cloudiness-Image">
+            </a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card center" style="width:600px">
+            <a target="_blank" href="Web Visualizations/Visualizations/wind.html">
+              <img src="Resources/assets/images/Fig4.png" class="card-img-top" alt="Wind-Image">
+            </a>  
+            </div>
+          </div>
+        </div>
+        </section>
+
+</body>
+</html> 

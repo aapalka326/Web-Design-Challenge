@@ -1,0 +1,109 @@
+<!--BOILER PLATE CODE TO SET UP MY WEBPAGE--------------------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Web Analysis Dashboard</title>
+
+ <!--LINKS TO STYLESHEETS--------------->   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<!--CREATE A NAVIGATION BAR WITH DROPDOWN FEATURE AND MOBILE FLEXIBILITY----------------->
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <!--BRAND ------>
+        <a class="navbar-brand" href="HTML_COPY.html"> City Latitude Analysis </a>
+      
+        <!-- LINKS ---------- -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="Comparisons.html">Comparison</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Data.html">Data</a>
+          </li>
+      
+          <!-- DROPDOWN MENU ------->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              Plots
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="Web Visualizations/Visualizations/maxtemp.html">Max Temperature</a></li>
+              <li><a class="dropdown-item" href="Web Visualizations/Visualizations/humidity.html">Humidity</a></li>
+              <li><a class="dropdown-item" href="Web Visualizations/Visualizations/cloudiness.html">Cloudiness</a></li>
+              <li><a class="dropdown-item" href="Web Visualizations/Visualizations/wind.html">Wind Speed</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+<!--PROJECT SUMMARY WITH VISUALIZATION--------->
+      <header class="header">
+          <h1>Project Summary</h1>
+      </header>
+      <main class="center">
+          <section class="section">
+            <div class="clearfix">
+              <img src="Resources/assets/images/Fig1.png" class="col-md-6 float-md-end mb-3 ms-md-3" style="width:600px" alt="...">
+            
+              <p class="fs-3">"The purpose of this project was to analyze how weather changes as you get closer to the equator.
+                To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
+                After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.
+                Factors we looked at included: temperature, cloudiness, wind speed, and humidity
+                This site provides the source data and visualizations created as part of the analysis,
+                as well as explanations and descriptions of any trends and correlations witnessed."
+              </p>
+            
+            </div>
+          </section>
+      </main>
+
+<!--LINKS TO ALL VISUALIZATIONS WITH SIDEBAR WITH ACTIVE IMAGE LINKS-->
+      <header class="header">
+          <h2>Visualizations</h2>
+      </header>
+      <section class="visual-custom">
+      <div class="row row-cols-1 row-cols-md-2 g-4"> 
+        <div class="col">
+          <div class="card center" style="width:500px">
+          <a target="_blank" href="maxtemp.html">  
+            <img src="Resources/assets/images/Fig1.png" class="card-img-top" alt="Temperature-Image">
+          </a>  
+          </div>
+        </div>
+        <div class="col">
+          <div class="card center" style="width:500px">
+          <a target="_blank" href="humidity.html">
+            <img src="Resources/assets/images/Fig2.png" class="card-img-top" alt="Humidity-Image">
+          </a>  
+          </div>
+        </div>
+        <div class="col">
+          <div class="card center" style="width:500px">
+          <a target="_blank" href="cloudiness.html"> 
+            <img src="Resources/assets/images/Fig3.png" class="card-img-top" alt="Cloudiness-Image">
+          </a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card center" style="width:500px">
+          <a target="_blank" href="wind.html">
+            <img src="Resources/assets/images/Fig4.png" class="card-img-top" alt="Wind-Image">
+          </a>  
+          </div>
+        </div>
+      </div>
+      </section>
+
+
+</body>
+
+<!--------- Copyright ----------------------------------------->
+<div class="footer-copyright text-center py-3 custom">© 2020 Copyright: Northwestern Data Science Bootcamp</div>
